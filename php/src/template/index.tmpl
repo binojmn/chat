@@ -1,0 +1,39 @@
+<html>
+<head>
+        <title>IBM Watson Health</title>
+        <link rel="stylesheet" href="css/all.css" type="text/css" />
+</head>
+<body class="signin">
+<div id="content">
+        <div id="inner">
+          <div class="topHead">
+        <a href="/" class="logo">#</a>
+</div>
+                <div id="signinBlock">
+                        <span class="formContainer">
+                          <p class="errormessge"><?php if(isSet($_GET['invalid'])) {echo("Invalid Username / Password"); } ?></p>
+                                <form id="signInForm" action="login.php" method="POST" data-ajax="true">
+                                        <span class="field signinRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                                <input class="fillin validated " autofocus="true" name="usrname" value="" title="Username" type="text" required="required" placeholder="Username" spellcheck="false"/>
+                                        </span>
+
+                                        <span class="field signinRow passRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                                <input class="fillin validated " name="usrpass" title="Password" type="password" required="required" placeholder="Password"/>
+                                        </span>
+                                        <div class="buttonWrap">
+                                                <input type="hidden" name="persist" value="true"/>
+                                                <input type="hidden" name="returnTo" value="/"/>
+                                                <input class="button" type="submit" alt="Sign in!" value="Sigin in!"/>
+                                        </div>
+                                </form>
+                        </span>
+                                        <div class="topHead"><a href="register.php" class="close">Register</a></div>
+                </div>
+        </div>
+</div>
+</body>
+</html>

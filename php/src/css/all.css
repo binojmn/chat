@@ -1,0 +1,150 @@
+body.signin,
+body.passwordresets {
+  background: #5b5b77;
+  background: linear-gradient(to bottom, #5b5b77 50%, #29283b 100%);
+  font-family: 'ProximaNova';
+  -webkit-font-smoothing: antialiased;
+}
+body.signin #content #inner { width: 100%; }
+body.signin #content {
+  position: absolute;
+  top: 50%;
+  margin-top: -200px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  padding: 0;
+  max-width: 500px;
+  width: auto;
+  overflow: visible;
+}
+.topHead {
+  height: 40px;
+  padding: 17px 30px;
+  text-align: right;
+}
+#signinBlock {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px 24px 24px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+#signinBlock .formContainer .signinRow label {
+  padding-bottom: 6px;
+  font-size: 18px;
+  color: #888;
+}
+#signinBlock .formContainer .signinRow label {
+  padding-bottom: 6px;
+  font-size: 18px;
+  color: #888;
+}
+#signinBlock .formContainer .signinRow {
+  display: block;
+  position: relative;
+  margin: 0 0 15px;
+}
+.topHead .logo {
+  display: block;
+  width: 410px;
+  height: 40px;
+  float: left;
+  background-image: url('../images/IBM_Watson_Health.jpg');
+  background-size: 410px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: transparent;
+}
+#signinBlock input.fillin:focus { border-bottom: 2px solid #95d2ec; }
+#signinBlock .error input.fillin { border-bottom: 2px solid #ed656c; }
+#signinBlock ::-webkit-input-placeholder {
+  color: rgba(128, 130, 133, 0.7);
+  font-weight: 400;
+}
+#signinBlock :-ms-input-placeholder {
+  color: rgba(128, 130, 133, 0.7);
+  font-weight: 400;
+}
+#signinBlock ::-moz-placeholder {
+  color: rgba(128, 130, 133, 0.7);
+  font-weight: 400;
+}
+#signinBlock input.fillin:focus::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.15); }
+#signinBlock input.fillin:focus:-ms-input-placeholder { color: rgba(0, 0, 0, 0.15); }
+#signinBlock input.fillin:focus::-moz-placeholder { color: rgba(0, 0, 0, 0.15); }
+#signinBlock .passRow.field input.fillin {
+  padding-right: 65px;
+  width: 320px;
+}
+#signinBlock input.button {
+  -webkit-appearance: none;
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  padding: 0 25px;
+  font-family: "Verdana";
+  color: white;
+  font-weight: 500;
+  font-size: 26px;
+  text-decoration: none;
+  border: none;
+  border-radius: 35px;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #43c1be;
+  -webkit-transition: background 0.15s ease-in-out, width .2s ease-in-out;
+  transition: background 0.15s ease-in-out, width .2s ease-in-out;
+}
+#signinBlock input.button:active {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+#signinBlock input.button:hover { background: #36d8d6; }
+#signinBlock input.button:disabled {
+  background: #dcdce9;
+  pointer-events: none;
+}
+  #signinBlock .passRow.field input.fillin { width: 100%; }
+  #signinBlock .resetPassLink {
+    top: auto;
+    bottom: 0;
+    line-height: 20px;
+    padding: 11px;
+  }
+  #signinBlock p.description { padding: 0 1em; }
+  #signinBlock .formContainer .signinRow { margin: 0 1em 0.5em; }
+  #signinBlock .field .errorBlip { bottom: 12px; }
+  #signinBlock input.fillin:focus {
+    background: #fff;
+    border: solid 1px #8abbfc;
+  }
+  #signinBlock input.fillin {
+    width: 100%;
+    padding: 11px;
+    height: auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 20px;
+    box-shadow: none;
+    background: #f9fafb;
+    border: 1px solid #e0e6ea;
+    outline: none;
+    color: #333;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+.errormessge {
+  font-family: Verdana;
+  color: #ff0000;
+  text-align: center;
+}
+a {
+    font-family: Verdana;
+    color: hotpink;
+} 

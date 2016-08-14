@@ -1,0 +1,45 @@
+<html>
+<head>
+        <title>IBM Watson Health</title>
+        <link rel="stylesheet" href="css/all.css" type="text/css" />
+</head>
+<body class="signin">
+<div id="content">
+        <div id="inner">
+          <div class="topHead">
+        <a href="/" class="logo">#</a>
+</div>
+                <div id="signinBlock">
+                        <span class="formContainer">
+                            <p class="errormessge"> <?php
+   				   if($logout) {
+					echo("You have been successfully logged out.");
+				   } elseif ($register) { 
+                                   	echo("Successfully Registered.");
+				  }?>
+                                  <br/><a href='index.php'>Home</a> to start the Chat!
+                                 </p>
+                                <form id="signInForm" action="register.php" method="POST" data-ajax="true">
+                                        <span class="field signinRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                        </span>
+                                        <span class="field signinRow passRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                        </span>
+                                        <span class="field signinRow passRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                        </span>
+                                        <div class="buttonWrap">
+                                                <input type="hidden" name="persist" value="true"/>
+                                                <input type="hidden" name="returnTo" value="/"/>
+                                        </div>
+                                </form>
+                        </span>
+                </div>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+        <title>IBM Watson Health</title>
+        <link rel="stylesheet" href="css/all.css" type="text/css" />
+</head>
+<body class="signin">
+<div id="content">
+        <div id="inner">
+          <div class="topHead">
+        <a href="/" class="logo">#</a>
+</div>
+                <div id="signinBlock">
+                        <span class="formContainer">
+                            <p class="errormessge"><?php if(isSet($regerrmsg)) { echo($regerrmsg); }  ?></p>
+                                <form id="signInForm" action="register.php" method="POST" data-ajax="true">
+                                        <span class="field signinRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                                <input class="fillin validated " autofocus="true" name="fname" value="" title="First Name" type="text" required="required" placeholder="First Name" spellcheck="false"/>
+                                        </span>
+
+                                        <span class="field signinRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                                <input class="fillin validated " autofocus="true" name="usrname" value="" title="Email" type="text" required="required" placeholder="Username" spellcheck="false"/>
+                                        </span>
+                                        <span class="field signinRow passRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                                <input class="fillin validated " name="usrpass" title="Password" type="password" required="required" placeholder="Password"/>
+                                        </span>
+                                        <span class="field signinRow passRow ">
+                                                <span class="message"></span>
+                                                <span class="errorBlip"></span>
+                                                <input class="fillin validated " name="conpass" title="Confirm Password" type="password" required="required" placeholder="Confirm Password"/>
+                                        </span>
+                                        <div class="buttonWrap">
+                                                <input type="hidden" name="persist" value="true"/>
+                                                <input type="hidden" name="returnTo" value="/"/>
+                                                <input class="button" type="submit" alt="Register!" value="Register!"/>
+                                        </div>
+                                        <p align="right"><a href="index.php">Home</a></p>
+                                </form>
+                        </span>
+                </div>
+        </div>
+</div>
+</body>
+</html>
