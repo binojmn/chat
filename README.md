@@ -1,1 +1,1 @@
-# chat
+# Simple Chat Application
